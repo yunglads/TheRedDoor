@@ -20,6 +20,7 @@ TagManager:
   - WayPoint
   - PlayerBot
   - Note1
+  - Tip
   layers:
   - Default
   - TransparentFX
@@ -36,7 +37,7 @@ TagManager:
   - Dead
   - WayPoint
   - Mesh Link
-  - 
+  - Trigger
   - 
   - 
   - 

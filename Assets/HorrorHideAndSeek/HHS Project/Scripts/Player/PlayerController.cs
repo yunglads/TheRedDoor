@@ -91,7 +91,8 @@ public class PlayerController : MonoBehaviour {
     public AudioClip legBreakSound;
     private bool legBreak;
 
-
+    public Text noteText;
+    float waitTime;
 
     private void Awake()
     {
@@ -104,6 +105,7 @@ public class PlayerController : MonoBehaviour {
         imageCrouch.enabled = false;
         imageExitHidePlace.enabled = false;
 
+        noteText.enabled = false;
     }
 
     private void Update()
@@ -389,6 +391,32 @@ public class PlayerController : MonoBehaviour {
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Tip")
+        {
+            noteText.enabled = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        waitTime += Time.deltaTime;
+
+        if (other.tag == "Tip" && waitTime >= 5f)
+        {
+            noteText.enabled = false;
+            waitTime = 0f;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Tip")
+        {
+            noteText.enabled = false;
+        }
+    }
 }
 
 

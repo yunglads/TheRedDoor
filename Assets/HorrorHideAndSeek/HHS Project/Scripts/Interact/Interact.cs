@@ -88,8 +88,7 @@ public class Interact : MonoBehaviour {
         }else
         {
             interactButton.enabled = false;
-        }
-      
+        }      
     }
 
     private GameObject RayCastCheck()
