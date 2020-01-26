@@ -4,23 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Shootable
+  - WayPoint
   - Interact
-  - Enemy
-  - Key 2
-  - Key 1
-  - Exit Collider 2
-  - Portal
+  - Area 1
+  - Tip
   - Exit Collider
   - Portal Back
-  - Key 3
-  - Area 1
-  - Area 2
-  - Area 3
-  - Portal 2
-  - WayPoint
+  - Portal
   - PlayerBot
+  - Enemy
+  - Portal 2
   - Note1
-  - Tip
   layers:
   - Default
   - TransparentFX
@@ -31,13 +26,13 @@ TagManager:
   - 
   - 
   - Interact
-  - Player
-  - Item
-  - Enemy
-  - Dead
-  - WayPoint
-  - Mesh Link
-  - Trigger
+  - Ground
+  - Postprocessing
+  - Lighting
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -55,6 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fire
+    uniqueID: 3804908061
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
