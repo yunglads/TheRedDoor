@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour {
     public Slider volumeSlider;
     [Tooltip("Slider to controll sensitivity")]
     public Slider sensitivitySlider;
+    [HideInInspector]
+    public bool newGame = false;
+    [HideInInspector]
+    public bool continueGame = false;
 
     public void Awake()
     {
@@ -56,11 +60,13 @@ public class MainMenu : MonoBehaviour {
         if (state == 1)
         {
            StartCoroutine(ContinueGame());
+           continueGame = true;
         }
 
         if (state == 0)
         {
             StartCoroutine(StartNewGame());
+            newGame = true;
         }
     }
 
@@ -75,21 +81,21 @@ public class MainMenu : MonoBehaviour {
         PlayerPrefs.SetFloat("Sensitivity", sensitivitySlider.value);
     }
 
-    private IEnumerator ContinueGame()
+    public IEnumerator ContinueGame()
     {
         yield return new WaitForSeconds(2f);
         PlayerPrefs.SetString("SceneName", "New Game");
         PlayerPrefs.SetInt("LoadGame", 1);
         SceneManager.LoadScene("LoadScene");
-
+        //continueGame = true;
     }
 
-    private IEnumerator StartNewGame()
+    public IEnumerator StartNewGame()
     {
         yield return new WaitForSeconds(2f);
         PlayerPrefs.SetString("SceneName", "New Game");
         PlayerPrefs.SetInt("LoadGame", 0);
         SceneManager.LoadScene("LoadScene");
-
+        //newGame = true;
     }
 }

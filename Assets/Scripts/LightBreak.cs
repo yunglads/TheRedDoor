@@ -6,18 +6,25 @@ public class LightBreak : MonoBehaviour
 {
     public Light lightSource;
     public Light flashlight;
+    public GameObject enemyModel;
     AudioSource source;
+    public AudioSource source2;
     public AudioClip lightBreak;
+    public AudioClip spookySound;
     public BoxCollider collider1;
     public BoxCollider collider2;
 
     float waitTime;
     bool startTimer = false;
     bool playClip = false;
+    bool playClip2 = false;
+
     // Start is called before the first frame update
     void Start()
     {
         source = gameObject.GetComponent<AudioSource>();
+        source2 = gameObject.GetComponent<AudioSource>();
+        enemyModel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,11 +37,18 @@ public class LightBreak : MonoBehaviour
             startTimer = false;
             Destroy(collider1);
             Destroy(collider2);
+            Destroy(enemyModel);
+        }
+
+        if (playClip2)
+        {
+            playClip2 = false;
+            source2.PlayOneShot(spookySound);
         }
 
         if (startTimer)
         {
-            waitTime += Time.deltaTime;
+            waitTime += Time.fixedDeltaTime;
         }       
 
         if (waitTime >= .5f)
@@ -45,9 +59,12 @@ public class LightBreak : MonoBehaviour
         {
             lightSource.enabled = true;
         }
-        if (waitTime >= 1.5f)
+        if (waitTime >= 1.5f && waitTime <= 1.55f)
         {
             lightSource.enabled = false;
+            lightSource.color = Color.red;
+            enemyModel.SetActive(true);
+            playClip2 = true;
         }
         if (waitTime >= 2f)
         {

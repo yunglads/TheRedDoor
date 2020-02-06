@@ -16,6 +16,8 @@ TagManager:
   - Enemy
   - Portal 2
   - Note1
+  - Key 1
+  - In Room
   layers:
   - Default
   - TransparentFX
