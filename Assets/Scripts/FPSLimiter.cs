@@ -8,6 +8,6 @@ public class FPSLimiter : MonoBehaviour
     void Awake()
     {
         QualitySettings.vSyncCount = 0; //V-Sync disabled.
-        Application.targetFrameRate = 60;   
+        Application.targetFrameRate = 45;   
     }
 }
