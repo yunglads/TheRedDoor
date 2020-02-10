@@ -5,12 +5,19 @@ using UnityEngine;
 public class PlayerInTrigger : MonoBehaviour
 {
     public GameObject closet;
+    public GameObject enemy;
+
+    private void Start()
+    {
+        //enemy.SetActive(false);
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
             closet.SetActive(true);
+            enemy.SetActive(true);
         }
     }
 

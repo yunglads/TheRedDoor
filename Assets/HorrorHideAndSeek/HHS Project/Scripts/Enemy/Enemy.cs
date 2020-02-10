@@ -67,6 +67,7 @@ public class Enemy : MonoBehaviour {
 
     private void Awake()
     {
+        gameObject.SetActive(false);
         AS = GetComponent<AudioSource>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         agent.speed = walkSpeed;
