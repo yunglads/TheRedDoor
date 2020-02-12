@@ -11,7 +11,7 @@ public class BabyLaugh : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        babyAudio = FindObjectOfType<AudioSource>();
+        babyAudio = baby.GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -28,7 +28,7 @@ public class BabyLaugh : MonoBehaviour
             babyAudio.Play();
             baby.transform.Rotate(0, 0, -72);
             rb.constraints = RigidbodyConstraints.None;
-            Destroy(GetComponent<BabyLaugh>());
+            Destroy(gameObject.GetComponent<BoxCollider>());
         }
     }
 }

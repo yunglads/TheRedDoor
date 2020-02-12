@@ -11,8 +11,10 @@ public class Puzzle : MonoBehaviour {
     public UnityEvent SolvedEvent;
     [Tooltip("Sets all puzzles to a random position at the start of the game.")]
     public bool randomize;
-    [HideInInspector]
     public bool activated;
+    public GameObject emptyPuzzleGO;
+    bool shiftPeices = false;
+    float waitTime;
 
     public void Start()
     {
@@ -46,6 +48,26 @@ public class Puzzle : MonoBehaviour {
                 SolvedEvent.Invoke();
                 activated = true;
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (!shiftPeices)
+        {
+            waitTime += Time.fixedDeltaTime;
+        }
+
+        if (waitTime <= 5f)
+        {
+            shiftPeices = true;
+        }
+        
+        if (shiftPeices)
+        {
+            blocks[8] = emptyPuzzleGO.GetComponent<PuzzleBlock>();
+            waitTime = 0;
+            return;
         }
     }
 

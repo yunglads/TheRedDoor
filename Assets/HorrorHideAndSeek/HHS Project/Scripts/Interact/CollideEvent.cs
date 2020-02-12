@@ -10,7 +10,7 @@ public class CollideEvent : MonoBehaviour {
         if (collision.relativeVelocity.magnitude > 2)
         {
             AudioSource.PlayClipAtPoint(collideSound, transform.position);
-            GetComponent<EnemyCall>().CallEnemy();
+            //GetComponent<EnemyCall>().CallEnemy();
         }
          
     }

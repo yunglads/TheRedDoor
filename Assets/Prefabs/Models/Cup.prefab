@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4391502987009422717}
   - component: {fileID: 4441790841564988843}
   - component: {fileID: 4441886582610938589}
-  - component: {fileID: 4442064239699000399}
   - component: {fileID: 4441849059327716103}
   m_Layer: 8
   m_Name: Cup
@@ -142,18 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collideSound: {fileID: 8300000, guid: c2038e14a2a717845a004ca081e7ef05, type: 3}
---- !u!114 &4442064239699000399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4338844569091824089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bbda754d571a04aba6c30df5705682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4441849059327716103
 MonoBehaviour:
   m_ObjectHideFlags: 0
