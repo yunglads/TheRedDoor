@@ -51,6 +51,9 @@ public class GameControll : MonoBehaviour {
 
     private void Start()
     {
+        player = player.GetComponent<PlayerController>();
+        enemy = enemy.GetComponent<Enemy>();
+
         if(hideCursor)
         {
             Cursor.visible = false;
