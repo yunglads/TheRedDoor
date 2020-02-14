@@ -133,6 +133,8 @@ public class GameControll : MonoBehaviour {
     {
         PlayerPrefs.SetInt("HasSaveGame", 0);
         gameOverPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void GameWin()

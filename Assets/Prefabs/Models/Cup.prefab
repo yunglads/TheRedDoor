@@ -16,12 +16,12 @@ GameObject:
   - component: {fileID: 4441790841564988843}
   - component: {fileID: 4441886582610938589}
   - component: {fileID: 4441849059327716103}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Cup
-  m_TagString: Interact
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4333120726186830119
 Transform:

@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour {
     public float walkSpeed;
     [HideInInspector]
     public bool seePlayer;
-    private bool chasePlayer;
+    //private bool chasePlayer;
     private bool searchPlayer;
     private int searchState;
     private HidePlace playerHidePlace;
@@ -78,7 +78,6 @@ public class Enemy : MonoBehaviour {
 
     private void Update()
     {
-
         SearchPlayer();
         CatchingPlayer();
         DoorCheck();
@@ -217,7 +216,7 @@ public class Enemy : MonoBehaviour {
 
         if (PlayerRaycast() && PlayerFOV() && player.hidePlace == null)
         {
-            chasePlayer = true;
+            //chasePlayer = true;
             seePlayer = true;
            
             ResetSearchStates();
@@ -239,7 +238,7 @@ public class Enemy : MonoBehaviour {
             }
         }
 
-        if(seePlayer || chasePlayer)
+        if(seePlayer)
         {
             EnemySetDestination(player.transform.position);
         }
@@ -274,7 +273,12 @@ public class Enemy : MonoBehaviour {
         return false;
     }
 
-    private void CatchingPlayer () {
+    private void CatchingPlayer ()
+    {
+        if (catchPlayerState == 0 && !player.canBeCatchen)
+        {
+            ResetSearchStates();
+        }
 
         if (catchPlayerState == 0 && seePlayer && player.canBeCatchen)
         {
@@ -436,7 +440,7 @@ public class Enemy : MonoBehaviour {
         {
             lastSawPoint = hit.position;
         }
-        chasePlayer = false;
+        //chasePlayer = false;
     
     }
 

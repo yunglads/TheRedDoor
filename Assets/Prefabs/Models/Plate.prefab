@@ -16,12 +16,12 @@ GameObject:
   - component: {fileID: 2056259143269101973}
   - component: {fileID: 2056226862205982393}
   - component: {fileID: 2056304455686895873}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Plate
-  m_TagString: Interact
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2094377094427415285
 Transform:

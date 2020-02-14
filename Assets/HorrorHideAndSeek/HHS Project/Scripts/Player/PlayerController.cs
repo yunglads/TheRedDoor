@@ -110,7 +110,6 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
-
         canBeCatchen = characterController.isGrounded;
        
         if (!locked)
@@ -240,6 +239,7 @@ public class PlayerController : MonoBehaviour {
         if(state == 4)
         {
             gameControll.ScreenBlood(0);
+            
         }
 
        
