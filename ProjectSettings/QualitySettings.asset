@@ -115,7 +115,7 @@ QualitySettings:
     customRenderPipeline: {fileID: 0}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-    Standalone: 0
+    Standalone: 1
     WebGL: 0
-    Windows Store Apps: 0
-    iPhone: 0
+    Windows Store Apps: 1
+    iPhone: 1

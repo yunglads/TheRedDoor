@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class PlayerInTrigger : MonoBehaviour
 {
-    public GameObject closet;
-    public GameObject enemy;
+    public GameObject objectToActivate;
+    public GameObject objectToDestroy;
 
     private void Start()
     {
         //enemy.SetActive(false);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            closet.SetActive(true);
-            enemy.SetActive(true);
+            objectToActivate.SetActive(true);
         }
     }
 
@@ -25,7 +24,7 @@ public class PlayerInTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            closet.SetActive(false);
+            Destroy(objectToDestroy);
         }
     }
 }

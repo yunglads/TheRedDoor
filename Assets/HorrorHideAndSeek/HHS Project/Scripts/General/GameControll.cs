@@ -169,7 +169,7 @@ public class GameControll : MonoBehaviour {
         {
             if (dangerAmbient.volume < 1)
             {
-                dangerAmbient.volume += Time.deltaTime / 2f;
+                dangerAmbient.volume += Time.deltaTime;
             }
 
         }

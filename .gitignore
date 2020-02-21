@@ -12,3 +12,7 @@ obj/
 Packages/
 TestBuilds/
 Temp/
+TheRedDoor.csproj
+*.csproj
+MacBuilds.app/
+PCBuilds/
