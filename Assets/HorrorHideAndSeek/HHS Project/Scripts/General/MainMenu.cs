@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour {
     public void Awake()
     {
         Time.timeScale = 1.0f;
-        continueButton.interactable = false;
+        //continueButton.interactable = false;
 
         if(PlayerPrefs.HasKey("Sensitivity"))
         {
