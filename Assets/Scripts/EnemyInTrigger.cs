@@ -29,5 +29,10 @@ public class EnemyInTrigger : MonoBehaviour
         {
             enemyGone = true;
         }
+
+        if (other.tag == "Player")
+        {
+            enemyGone = true;
+        }
     }
 }
