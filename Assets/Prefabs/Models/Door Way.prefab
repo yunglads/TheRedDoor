@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7417308241685178588
 Transform:
@@ -103,21 +103,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7417308241685178588}
     m_Modifications:
+    - target: {fileID: 1178517395301494, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1405366948854178, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
       propertyPath: m_Name
       value: Interact_Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1814511052243898, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952821833171740, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4137828555809562, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.86
+      value: -0.65897
       objectReference: {fileID: 0}
     - target: {fileID: 4137828555809562, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.913
+      value: -1.8923
       objectReference: {fileID: 0}
     - target: {fileID: 4137828555809562, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00028515
+      value: 0.011059
       objectReference: {fileID: 0}
     - target: {fileID: 4137828555809562, guid: 0246b2177252dc54995e3721c66f2b99, type: 3}
       propertyPath: m_LocalRotation.x

@@ -5521,12 +5521,13 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Designed and Developed by: Aladdin Vicuna / Spitfire Games
 
+    Horror
+    Hide and seek kit by: Alexey Crayne
 
-    Main
-    Menu Music: Myuu -  bad encounter
+    Main Menu Music: Myuu -  bad encounter
 
-
-    Horror Hide and seek kit by: Alexey Crayne'
+    TV
+    Video Music: Nine Inch Nails - 30 Ghosts IV '
 --- !u!222 &786288129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8110,7 +8111,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953466380}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8458,7 +8459,7 @@ RectTransform:
   - {fileID: 1459814129}
   - {fileID: 1226343752}
   m_Father: {fileID: 1953466380}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12, y: 0.116840884}
   m_AnchorMax: {x: 0.88385415, y: 0.883}
@@ -12822,8 +12823,8 @@ RectTransform:
   - {fileID: 1588203095}
   - {fileID: 1013720235}
   - {fileID: 1166551928}
-  - {fileID: 1241864332}
   - {fileID: 1214779875}
+  - {fileID: 1241864332}
   m_Father: {fileID: 166123542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -47,12 +47,14 @@ public class GameControll : MonoBehaviour {
     public Image crouchImage;
     public Image hidePlaceExitImage;
     public Image interactImage;
+    public GameObject dirLight;
 
 
     private void Start()
     {
         player = player.GetComponent<PlayerController>();
         enemy = enemy.GetComponent<Enemy>();
+        dirLight.SetActive(false);
 
         if(hideCursor)
         {

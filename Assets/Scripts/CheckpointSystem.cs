@@ -14,6 +14,7 @@ public class CheckpointSystem : MonoBehaviour
         if (triggerEntered)
         {
             playerSpawnpoint.position = spawnpoint.position;
+            playerSpawnpoint.rotation = spawnpoint.rotation;
         }
     }
 
