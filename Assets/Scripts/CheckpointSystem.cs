@@ -25,4 +25,12 @@ public class CheckpointSystem : MonoBehaviour
             triggerEntered = true;
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            triggerEntered = false;
+        }
+    }
 }

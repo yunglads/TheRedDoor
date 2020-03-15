@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Game.unity
     guid: c7ef6f985f3259b469a33503bad96a08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ThankYou.unity
     guid: 07656c3ae96eeee4a870f7e93b7fb41e
   m_configObjects: {}

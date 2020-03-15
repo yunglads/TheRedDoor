@@ -18,6 +18,10 @@ TagManager:
   - Note1
   - Key 1
   - In Room
+  - Cupboard 1
+  - Cupboard 2
+  - Cupboard 5
+  - Cupboard 1-1
   layers:
   - Default
   - TransparentFX
